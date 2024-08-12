@@ -1,0 +1,20 @@
+- plants should populate center of screen
+
+  - randomly place plant in new spot -> create a grid on the screen
+    - when laoding, shift each plant at a random number so the plants look like their placed a little more organically
+
+- I need to keep plants positions in db so they stay in same spot on every load
+
+- make each plant slightly enlarge when hovering over
+- plan db schema for plants
+
+  - description/memory
+  - pictures
+  - date
+  - people tags (tag friend/person involved by name)
+
+- add feature to add new plant from home screen
+- add option to draw my own plant
+
+- if someone wants to add a memory, they have to answer a question about me (to prove they know me good enough to add a memory)
+- have different garden beds per year?
