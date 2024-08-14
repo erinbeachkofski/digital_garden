@@ -1,13 +1,18 @@
+import PlantImg from "./assets/plant.png";
+
 export const Plant = () => {
-  const randomXOffset = Math.random() * 50;
-  const randomYOffset = Math.random() * 50;
+  const randomXOffset = Math.random() * 40;
+  const randomYOffset = Math.random() * 40;
   console.log(`${randomXOffset}, ${randomYOffset}`);
-  const dynamicClassName = `w-10 h-10 bg-emerald-800 relative`;
+  const dynamicClassName = `w-16 h-16 relative hover:scale-110 transform transition-transform duration-300 ease-in-out`;
 
   return (
     <div
       className={`${dynamicClassName}`}
       style={{ left: `${randomXOffset}%`, top: `${randomYOffset}%` }}
-    ></div>
+    >
+      {/* <img src="https://emojicdn.elk.sh/🌱" alt="plant" /> */}
+      <img src={PlantImg} alt="plant" />
+    </div>
   );
 };

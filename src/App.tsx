@@ -25,21 +25,25 @@ const PlantBox = () => {
   };
   const gridColsClass = gridColsClasses[numCols] || "grid-cols-1";
 
-  return <div className={`grid ${gridColsClass} gap-4`}>{plantElements}</div>;
+  return (
+    <div className={`w-1/2 h-1/2 grid ${gridColsClass} gap-4`}>
+      {plantElements}
+    </div>
+  );
 };
 
 export const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="flex-col w-screen h-screen bg-white-100">
-          <div className="w-full text-3xl font-bold text-center text-emerald-800">
-            Welcome to erin's garden!
+        <div className="flex flex-col w-screen h-screen bg-amber-50">
+          <div className="w-full h-auto px-3 py-3 text-3xl text-start text-lime-800">
+            erin's garden
           </div>
-          <div className="w-full font-bold text-center text-emerald-800 text-md">{`cultivating silly simplicity :)`}</div>
-          <div className="flex items-center justify-center w-screen h-screen bg-emerald-50">
+          <div className="flex items-center justify-center flex-grow">
             <PlantBox />
           </div>
+          <div className="w-full h-auto px-3 py-3 text-end text-lime-800 text-md">{`cultivating silly simplicity :)`}</div>
         </div>
       </header>
     </div>
