@@ -26,7 +26,9 @@ const PlantBox = () => {
   const gridColsClass = gridColsClasses[numCols] || "grid-cols-1";
 
   return (
-    <div className={`w-1/2 h-1/2 grid ${gridColsClass} gap-4`}>
+    <div
+      className={`w-3/4 h-1/3 sm:w-1/3 sm:h-1/2 grid ${gridColsClass} gap-4`}
+    >
       {plantElements}
     </div>
   );

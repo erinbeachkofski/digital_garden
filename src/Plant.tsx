@@ -4,7 +4,7 @@ export const Plant = () => {
   const randomXOffset = Math.random() * 40;
   const randomYOffset = Math.random() * 40;
   console.log(`${randomXOffset}, ${randomYOffset}`);
-  const dynamicClassName = `w-16 h-16 relative hover:scale-110 transform transition-transform duration-300 ease-in-out`;
+  const dynamicClassName = `h-10 h-10 sm:w-16 sm:h-16 relative hover:scale-110 transform transition-transform duration-300 ease-in-out`;
 
   return (
     <div
