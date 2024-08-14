@@ -549,32 +549,8 @@ video {
   position: absolute;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.col-span-12 {
-  grid-column: span 12 / span 12;
-}
-
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.row-span-12 {
-  grid-row: span 12 / span 12;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
+.relative {
+  position: relative;
 }
 
 .flex {
@@ -589,20 +565,12 @@ video {
   height: 2.5rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
-.h-4 {
-  height: 1rem;
+.h-screen {
+  height: 100vh;
 }
 
 .h-auto {
@@ -623,31 +591,6 @@ video {
 
 .w-auto {
   width: auto;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.auto-cols-max {
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-}
-
-.auto-cols-fr {
-  grid-auto-columns: minmax(0, 1fr);
-}
-
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
 }
 
 .grid-cols-1 {
@@ -714,39 +657,19 @@ video {
   gap: 1rem;
 }
 
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 63 18 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
-}
-
 .bg-emerald-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
 }
 
-.bg-emerald-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
-}
-
-.bg-emerald-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 44 34 / var(--tw-bg-opacity));
-}
-
 .bg-emerald-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(6 95 70 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
 }
 
 .text-center {
@@ -760,21 +683,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.text-emerald-600 {
-  --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
-}
-
-.text-emerald-950 {
-  --tw-text-opacity: 1;
-  color: rgb(2 44 34 / var(--tw-text-opacity));
 }
 
 .text-emerald-800 {

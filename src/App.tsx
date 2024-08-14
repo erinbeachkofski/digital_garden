@@ -37,7 +37,7 @@ export const App = () => {
             Welcome to erin's garden!
           </div>
           <div className="w-full font-bold text-center text-emerald-800 text-md">{`cultivating silly simplicity :)`}</div>
-          <div className="flex items-center justify-center h-full bg-emerald-50">
+          <div className="flex items-center justify-center w-screen h-screen bg-emerald-50">
             <PlantBox />
           </div>
         </div>
