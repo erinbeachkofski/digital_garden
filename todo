@@ -1,9 +1,9 @@
 - plants should populate center of screen
 
-  - randomly place plant in new spot -> create a grid on the screen
+  - create a grid on the screen
     - when laoding, shift each plant at a random number so the plants look like their placed a little more organically
 
-- I need to keep plants positions in db so they stay in same spot on every load
+- Plants will be stored in a list, that list will populate the grid
 
 - make each plant slightly enlarge when hovering over
 - plan db schema for plants
