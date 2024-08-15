@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import PlantImg from "./assets/plant.png";
 
 type MemoryCardProps = {
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,7 +9,8 @@ type MemoryCardProps = {
 export const MemoryCard = ({ show, setShow }: MemoryCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const cardBackgroundRef = useRef<HTMLDivElement>(null);
-
+  const memoryText =
+    "Big baking day! OMG I made blueberry flaxseed oatmeal muffins… but I forgot the blueberries!!!! So I made a blueberry compote instead and was able to salvage the muffins (they were honestly really good - not too sweet). ";
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       console.log(event.target);
@@ -43,8 +45,22 @@ export const MemoryCard = ({ show, setShow }: MemoryCardProps) => {
       >
         <div
           ref={cardRef}
-          className="shadow-lg w-72 h-96 rounded-xl bg-amber-50"
-        />
+          className="flex flex-col h-auto px-6 py-6 shadow-lg w-72 rounded-xl bg-amber-50"
+        >
+          <div className="flex flex-row justify-between">
+            <text className="text-xl text-zinc-700">
+              {new Date(Date.now()).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </text>
+            <img src={PlantImg} alt="plant" className="h-14" />
+          </div>
+          <div className="pt-10">
+            <text className="text-md text-zinc-700">{memoryText}</text>
+          </div>
+        </div>
       </div>
     </div>
   );
