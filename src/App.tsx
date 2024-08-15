@@ -1,3 +1,5 @@
+import { memo, useState } from "react";
+import { MemoryCard } from "./MemoryCard";
 import { Plant } from "./Plant";
 
 const PlantBox = () => {
@@ -34,19 +36,24 @@ const PlantBox = () => {
   );
 };
 
+const MemoizedPlantBox = memo(PlantBox);
+
 export const App = () => {
+  const [showCard, setShowCard] = useState(false);
   return (
     <div className="App">
       <header className="App-header">
+        <MemoryCard show={showCard} />
         <div className="flex flex-col w-screen h-screen bg-amber-50">
           <div className="w-full h-auto px-3 py-3 text-3xl text-start text-lime-800">
             erin's garden
           </div>
           <div className="flex items-center justify-center flex-grow">
-            <PlantBox />
+            <MemoizedPlantBox />
           </div>
           <div className="w-full h-auto px-3 py-3 text-end text-lime-800 text-md">{`cultivating silly simplicity :)`}</div>
         </div>
+        <button onClick={() => setShowCard(!showCard)}>Show card</button>
       </header>
     </div>
   );
